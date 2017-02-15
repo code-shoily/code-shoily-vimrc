@@ -51,7 +51,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 Plugin 'tpope/vim-speeddating'
+Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'amix/vim-zenroom2'
 call vundle#end()            " required
 filetype plugin indent on    " required
