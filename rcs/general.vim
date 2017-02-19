@@ -123,6 +123,34 @@ else
     let g:colors_name="peaksea"
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Editing mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap VIM 0 to first non-blank character
+map 0 ^
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+  nmap <D-j> <M-j>
+  nmap <D-k> <M-k>
+  vmap <D-j> <M-j>
+  vmap <D-k> <M-k>
+endif
+
+" Mimic Emacs Line Editing in Insert Mode Only
+inoremap <C-A> <Home>
+inoremap <C-B> <Left>
+inoremap <C-E> <End>
+inoremap <C-F> <Right>
+inoremap <C-K> <Esc>lDa
+inoremap <C-U> <Esc>d0xi
+inoremap <C-Y> <Esc>Pa
+inoremap <C-X><C-S> <Esc>:w<CR>a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -225,10 +253,21 @@ map <C-H> <C-W>h<C-W>_
 vnoremap < <gv
 vnoremap > >gv
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Command mode related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
 cmap cd. lcd %:p:h
+
+" Bash like keys for the command line
+cnoremap <C-A>		<Home>
+cnoremap <C-E>		<End>
+cnoremap <C-K>		<C-U>
+
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

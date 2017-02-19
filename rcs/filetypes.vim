@@ -24,6 +24,17 @@ let g:pymode_doc = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint = 0
 
+""""""""""""""""""""""""""""""
+" => Elixir Section
+""""""""""""""""""""""""""""""
+func! ElixirAbbreviations()
+    iab  ;; <c-r> \|>
+    iab  w <c-r> ->
+    iab  q <c-r> <-
+endfunc
+
+autocmd BufNewFile,BufRead *.ex,*.exs call ElixirAbbreviations()
+
 
 
 """"""""""""""""""""""""""""""

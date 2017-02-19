@@ -44,13 +44,6 @@ let g:user_zen_mode='a'
 let g:user_zen_leader_key='<c-y>'
 
 """"""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
-
-
-""""""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
