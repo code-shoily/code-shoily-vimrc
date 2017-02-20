@@ -57,5 +57,13 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'vim-scripts/tlib'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'vim-erlang/vim-erlang-runtime'
+Plugin 'vim-erlang/vim-erlang-skeletons'
+Plugin 'vim-erlang/vim-erlang-compiler'
+Plugin 'vim-erlang/vim-erlang-omnicomplete'
+Plugin 'vim-erlang/vim-erlang-tags'
+Plugin 'vim-erlang/erlang-motions.vim'
+Plugin 'vim-erlang/vim-rebar'
+Plugin 'vim-erlang/vim-dialyzer'
 call vundle#end()            " required
 filetype plugin indent on    " required

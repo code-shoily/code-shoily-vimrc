@@ -27,14 +27,22 @@ let g:pymode_lint = 0
 """"""""""""""""""""""""""""""
 " => Elixir Section
 """"""""""""""""""""""""""""""
-func! ElixirAbbreviations()
-    iab  ;; <c-r> \|>
-    iab  w <c-r> ->
-    iab  q <c-r> <-
-endfunc
-
-autocmd BufNewFile,BufRead *.ex,*.exs call ElixirAbbreviations()
-
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'functions:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records'
+    \ ]
+\ }
 
 
 """"""""""""""""""""""""""""""
