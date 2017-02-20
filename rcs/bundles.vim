@@ -65,5 +65,6 @@ Plugin 'vim-erlang/vim-erlang-tags'
 Plugin 'vim-erlang/erlang-motions.vim'
 Plugin 'vim-erlang/vim-rebar'
 Plugin 'vim-erlang/vim-dialyzer'
+Plugin 'tpope/dispatch.vim' 
 call vundle#end()            " required
 filetype plugin indent on    " required
