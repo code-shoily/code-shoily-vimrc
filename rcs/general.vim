@@ -90,7 +90,6 @@ set ffs=unix,dos,mac
 
 if has("mac") || has("macunix")
     set gfn=Source\ Code\ Pro:h15,Menlo:h15
-    set macmeta
 elseif has("linux")
     set gfn=Monofur\ 16
 elseif has("unix")
